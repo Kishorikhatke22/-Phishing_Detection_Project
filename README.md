@@ -23,12 +23,19 @@ This Phishing Detection and Response System is designed to detect phishing websi
  Database: SQLite
 
  Features
+ 
 ✅ Detect phishing websites using a trained ML model
+
 ✅ Maintain a blocklist and safe list of websites
+
 ✅ Web-based UI for easy interaction
+
 ✅ API-based approach for third-party integration
+
 ✅ Logs phishing detection attempts for future reference
+
 ✅ Automatic updates of phishing URLs
+
 ✅ Ready for deployment on Render
 
 Tech Stack
@@ -58,26 +65,37 @@ Render                                 	 Deployment
 1️⃣  Clone the Repository
 git clone https://github.com/YOUR-USERNAME/Phishing-Detection-and-Response.git
 cd Phishing-Detection-and-Response
+
 2️⃣ Create a Virtual Environment (Optional but Recommended)
 python -m venv venv
 source venv/bin/activate  # For Mac/Linux
 venv\Scripts\activate  # For Windows
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 4️⃣ Run the Flask App
 python app.py
 Then open: http://127.0.0.1:5000/ in your browser.
 
+
  Usage Guide
 🔹 Detect Phishing URL
+
 1️⃣ Open the website (http://127.0.0.1:5000/)
+
 2️⃣ Enter a URL in the input box
+
 3️⃣ Click "Check URL"
+
 4️⃣ The system will classify it as Phishing or Legitimate
 
 🔹 Block a Website
+
 1️⃣ Go to http://127.0.0.1:5000/block
+
 2️⃣ Enter the URL to be blocked
+
 3️⃣ Click "Block"
 
 🔹 View Blocked and Safe Sites
