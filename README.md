@@ -3,7 +3,7 @@
 
 A Flask-based Machine Learning project that detects phishing websites and provides a response mechanism.
 
- Table of Contents
+ <h1>Table of Contents</h1>
  
  ✅About the Project
  
