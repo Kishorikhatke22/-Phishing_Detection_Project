@@ -74,14 +74,23 @@ Render                                 	 Deployment
  Phishing-Detection-and-Response/
  
 │── static/                  # CSS & JavaScript files
+
 │── templates/               # HTML files
+
 │   ├── index.html           # Main UI
+
 │   ├── result.html          # Result page
+
 │── app.py                   # Flask application
+
 │── phishing_model.pkl       # Machine Learning Model
+
 │── blocked_sites.txt        # Blocked phishing websites
+
 │── safe_sites.txt           # Safe websites list
+
 │── requirements.txt         # Required Python libraries
+
 │── README.md                # Documentation
 
  <h1>Installation</h1>
@@ -135,7 +144,9 @@ Endpoint	             Method	                  Description
 /safe-sites  	         GET	                    Returns the list of safe sites
 
 <h1>Deployment Guide</h1>
+
 This project can be hosted on:
+
 ✅ Render
 
 
