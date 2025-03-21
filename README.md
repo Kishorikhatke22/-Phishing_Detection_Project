@@ -53,21 +53,21 @@ This Phishing Detection and Response System is designed to detect phishing websi
 
 <h1>Tech Stack</h1>
 
-Technology	                             Purpose
+Technology	                -             Purpose
 
-Python	                                 Backend logic & ML model
+Python	                    -             Backend logic & ML model
 
-Flask                	                   Web framework for API & UI
+Flask                	     -              Web framework for API & UI
 
-Scikit-learn	                           Machine learning for phishing detection
+Scikit-learn	              -             Machine learning for phishing detection
 
-Pandas & NumPy       	                   Data processing
+Pandas & NumPy       	     -              Data processing
 
-HTML, CSS, JavaScript	                   Frontend
+HTML, CSS, JavaScript	     -             Frontend
 
-SQLite                                   Database to store blocked & safe sites
+SQLite                     -              Database to store blocked & safe sites
 
-Render                                 	 Deployment
+Render                     -           	 Deployment
 
  <h1>Project Architecture</h1>
  
