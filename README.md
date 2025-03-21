@@ -1,4 +1,4 @@
-<h1>**Phishing Detection and Response System**</h1>
+<h1>Phishing Detection and Response System</h1>
 
 
 A Flask-based Machine Learning project that detects phishing websites and provides a response mechanism.
@@ -25,7 +25,7 @@ A Flask-based Machine Learning project that detects phishing websites and provid
 
 This Phishing Detection and Response System is designed to detect phishing websites using machine learning techniques. It classifies URLs as safe or phishing based on extracted features. Additionally, it includes a response mechanism that allows users to block malicious websites.
 
- Key Information
+ <h1>Key Information</h1>
  
  Project Type: Machine Learning + Cybersecurity
  
@@ -35,7 +35,7 @@ This Phishing Detection and Response System is designed to detect phishing websi
  
  Database: SQLite
 
- Features
+ <h1>Features</h1>
  
 ✅ Detect phishing websites using a trained ML model
 
@@ -51,7 +51,7 @@ This Phishing Detection and Response System is designed to detect phishing websi
 
 ✅ Ready for deployment on Render
 
-Tech Stack
+<h1>Tech Stack</h1>
 
 Technology	                             Purpose
 
@@ -69,7 +69,7 @@ SQLite                                   Database to store blocked & safe sites
 
 Render                                 	 Deployment
 
- Project Architecture
+ <h1>Project Architecture</h1>
  
  Phishing-Detection-and-Response/
  
@@ -84,7 +84,7 @@ Render                                 	 Deployment
 │── requirements.txt         # Required Python libraries
 │── README.md                # Documentation
 
- Installation
+ <h1>Installation</h1>
  
 1️⃣  Clone the Repository
 git clone https://github.com/YOUR-USERNAME/Phishing-Detection-and-Response.git
@@ -103,7 +103,7 @@ python app.py
 Then open: http://127.0.0.1:5000/ in your browser.
 
 
- Usage Guide
+ <h1>Usage Guide</h1>
 🔹 Detect Phishing URL
 
 1️⃣ Open the website (http://127.0.0.1:5000/)
@@ -127,14 +127,14 @@ Open blocked_sites.txt to see blocked phishing sites
 Open safe_sites.txt to see trusted websites
 
 
-API Endpoints
+<h1>API Endpoints</h1>
 Endpoint	             Method	                  Description
 /	                     GET	                    Loads the main UI
 /check-url   	         POST                   	Checks if a URL is phishing or safe
 /block	               POST	                    Blocks a phishing website
 /safe-sites  	         GET	                    Returns the list of safe sites
 
-Deployment Guide
+<h1>Deployment Guide</h1>
 This project can be hosted on:
 ✅ Render
 
