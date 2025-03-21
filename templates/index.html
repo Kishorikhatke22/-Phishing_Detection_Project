@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection & Response</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+            color: white;
+        }
+        .container {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+        h2 {
+            color: #00ccff;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            padding: 12px 15px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .warning-box {
+            display: none;
+            background: #ff4444;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #cc0000;
+            border-radius: 4px;
+        }
+        .safe-box {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #2e7d32;
+            border-radius: 4px;
+        }
+        .response-buttons {
+            display: none;
+            margin-top: 15px;
+        }
+        .response-buttons button {
+            background-color: #ffcc00;
+            color: #111;
+            font-weight: bold;
+            margin: 5px;
+            transition: 0.3s;
+        }
+        .response-buttons button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Phishing Detection & Response</h2>
+        <form id="urlForm">
+            <input type="text" name="url" id="urlInput" placeholder="Enter website URL" required>
+            <button type="submit">Check Now</button>
+        </form>
+
+        <div class="safe-box" id="safeBox">
+             This is a **Legitimate Website.**
+        </div>
+
+        <div class="warning-box" id="warningBox">
+            **Warning! This Website is a Phishing Site.**
+        </div>
+
+        <div class="response-buttons" id="responseButtons">
+            <button id="blockSite"> Block Site</button>
+            <button id="reportPhishing"> Report Phishing</button>
+            <button id="suggestAlternative"> Suggest Safe Site</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("urlForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    let url = document.getElementById("urlInput").value;
+
+    let response = await fetch("/predict", {
+        method: "POST",
+        body: new URLSearchParams({ "url": url }),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" }
+    });
+
+    let data = await response.json();
+
+    if (data.result === "Phishing") {
+        document.getElementById("warningBox").style.display = "block";
+        document.getElementById("safeBox").style.display = "none";
+        document.getElementById("responseButtons").style.display = "block";
+    } else {
+        document.getElementById("safeBox").style.display = "block";
+        document.getElementById("warningBox").style.display = "none";
+        document.getElementById("responseButtons").style.display = "none";
+    }
+});
+
+// ✅ **Updated Block Site Code**
+
+document.getElementById("blockSite").addEventListener("click", async function() {
+    let url = document.getElementById("urlInput").value;
+
+    let response = await fetch("/block", {
+        method: "POST",
+        body: JSON.stringify({ "url": url }),
+        headers: { "Content-Type": "application/json" }
+    });
+
+    let data = await response.json();
+
+    if (response.ok) {
+        alert(data.message);  // ✅ Success Message
+    } else {
+        alert(data.error);  // ❌ Error Message
+    }
+});
+
+
+// ✅ **Updated Report Phishing Code**
+document.getElementById("reportPhishing").addEventListener("click", async function() {
+    let url = document.getElementById("urlInput").value;
+
+    let response = await fetch("/report", {
+        method: "POST",
+        body: JSON.stringify({ "url": url }),
+        headers: { "Content-Type": "application/json" }
+    });
+
+    let data = await response.json();
+
+    if (response.ok) {
+        alert(data.message);  // ✅ Show success message
+    } else {
+        alert(data.error);  // ❌ Show error message
+    }
+});
+
+// Suggest Alternative Safe Site
+document.getElementById("suggestAlternative").addEventListener("click", function() {
+    alert("Try visiting: https://www.google.com");
+});
+
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>

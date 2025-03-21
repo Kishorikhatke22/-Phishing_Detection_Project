@@ -1,0 +1,23 @@
+https://www.google.com
+https://www.microsoft.com
+https://www.apple.com
+https://www.mozilla.org
+https://www.wikipedia.org
+https://www.nist.gov
+https://www.ibm.com
+https://www.cloudflare.com
+https://www.who.int  # World Health Organization
+https://www.un.org  # United Nations
+https://www.python.org
+https://www.github.com
+https://www.stackoverflow.com
+https://www.khanacademy.org
+https://www.nationalgeographic.com
+https://www.ted.com
+https://www.edx.org
+https://www.coursera.org
+https://www.udemy.com
+https://www.w3schools.com
+https://www.freecodecamp.org
+https://www.cybercrime.gov.in  # Indian Govt Cybercrime Portal
+https://www.consumer.ftc.gov  # USA Consumer Protection
