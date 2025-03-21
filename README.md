@@ -21,7 +21,7 @@ A Flask-based Machine Learning project that detects phishing websites and provid
  
  Deployment Guide
 
-About the Project
+<h1>About the Project</h1>
 
 This Phishing Detection and Response System is designed to detect phishing websites using machine learning techniques. It classifies URLs as safe or phishing based on extracted features. Additionally, it includes a response mechanism that allows users to block malicious websites.
 
