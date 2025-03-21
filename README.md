@@ -137,15 +137,15 @@ Open safe_sites.txt to see trusted websites
 
 
 <h1>API Endpoints</h1>
-|Endpoint	            |Method	                  |Description
-|                     |    
-| |/	                  |  GET	                   | Loads the main UI
+| Endpoint	            | Method	               |Description                             
+|------------------------------------------------------------------------------------   |    
+| /	                   | GET	                  | Loads the main UI
 
-|/check-url   	         |POST                   |	Checks if a URL is phishing or safe
+| /check-url   	       | POST                  |	Checks if a URL is phishing or safe    |
 
-| /block	               |POST	                   |Blocks a phishing website
+| /block	              | POST	                 |Blocks a phishing website               |
 
-| /safe-sites  	         |GET	                  | Returns the list of safe sites
+| /safe-sites  	       | GET	                  | Returns the list of safe sites         |
 
 <h1>Deployment Guide</h1>
 
