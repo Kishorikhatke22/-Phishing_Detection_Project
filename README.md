@@ -5,21 +5,21 @@ A Flask-based Machine Learning project that detects phishing websites and provid
 
  Table of Contents
  
- About the Project
+ ✅About the Project
  
- Features
+ ✅Features
  
- Tech Stack
+ ✅Tech Stack
  
- Project Architecture
+ ✅Project Architecture
  
- Installation
+ ✅Installation
  
- Usage Guide
+ ✅Usage Guide
  
- API Endpoints
+ ✅API Endpoints
  
- Deployment Guide
+ ✅Deployment Guide
 
 <h1>About the Project</h1>
 
