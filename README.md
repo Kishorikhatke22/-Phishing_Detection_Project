@@ -96,7 +96,7 @@ Render                     -           	 Deployment
  <h1>Installation</h1>
  
 1️⃣  Clone the Repository
-git clone https://github.com/YOUR-USERNAME/Phishing-Detection-and-Response.git
+git clone https://github.com/Kishorikhatke22/Phishing-Detection-and-Response.git
 cd Phishing-Detection-and-Response
 
 2️⃣ Create a Virtual Environment (Optional but Recommended)
